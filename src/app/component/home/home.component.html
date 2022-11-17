@@ -1,1 +1,23 @@
-<p>home works!</p>
+<div class="games">
+  <ng-container *ngFor="let game of games">
+  <div class="game">
+    <img *ngIf="game.background_image"
+         [src]="game.background_image"
+         [alt]="game.name"
+    />
+    <p *ngIf="!game.background_image">No image</p>
+  </div>
+
+    <div class="game-description">
+      <p class="game-name"> {{game.name }}</p>
+      <div class="game-platforms">
+        <img
+          *ngFor="let gamePlatform of game.parent_platforms"
+          class="game-platform"
+          src="assets/images/platforms/{{ gamePlatform.platform.slug }}.svg"
+          alt="{{ gamePlatform.platform.slug }}"
+        />
+      </div>
+    </div>
+  </ng-container>
+</div>
