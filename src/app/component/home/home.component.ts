@@ -41,4 +41,18 @@ export class HomeComponent implements OnInit {
       })
   }
 
+  openGameDetails(id: number): void {
+    this.router.navigate(['details', id])
+  }
+
+  ngOnDestroy(): void {
+    if (this.gameSub) {
+      this.gameSub.unsubscribe()
+    }
+
+    if (this.routeSub) {
+      this.routeSub.unsubscribe()
+    }
+  }
+
 }
