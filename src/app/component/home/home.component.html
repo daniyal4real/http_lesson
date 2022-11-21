@@ -1,9 +1,20 @@
 <div class="games">
   <ng-container *ngFor="let game of games">
+<<<<<<< HEAD
   <div class="game" (click)="openGameDetails(game.id)">
     <div class="game-thumb-container">
     <img *ngIf="game.background_image"
          src="{{game.background_image}}"
+=======
+  <div class="game">
+
+    <!-- CHANGE IMAGE CLASS AND ADD DIV !-->
+    <div class="game-thumb-container">
+
+    <!-- CHANGE IMAGE CLASS AND ADD DIV !-->
+    <img *ngIf="game.background_image"
+         src="{{ game.background_image }}"
+>>>>>>> 0655d6ceb022e1c78370a2da7548e3afc2019220
          alt="thumbnail"
          class="game-thumbnail"
     />

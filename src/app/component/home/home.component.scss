@@ -1,16 +1,61 @@
+<<<<<<< HEAD
+=======
+.filters {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+::ng-deep {
+  .mat-form-field-infix {
+    background-color: #3f51b5;
+  }
+
+  .mat-select-value,
+  .mat-select-arrow,
+  .mat-form-field-hide-placeholder .mat-select-placeholder,
+  .mat-form-field-appearance-legacy .mat-form-field-label {
+    color: #fff !important;
+    opacity: 1;
+  }
+
+  .mat-form-field-infix {
+    border-color: #fff !important;
+    border-top: none;
+    padding-left: 5px !important;
+  }
+
+  .mat-form-field-appearance-legacy .mat-form-field-label {
+    padding-left: 5px;
+  }
+
+  .mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #fff !important;
+  }
+}
+
+>>>>>>> 0655d6ceb022e1c78370a2da7548e3afc2019220
 .games {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
+<<<<<<< HEAD
   margin: 100px auto;
   background-color: black;
 }
 
+=======
+  margin: 20px auto;
+}
+
+
+>>>>>>> 0655d6ceb022e1c78370a2da7548e3afc2019220
 .game {
   width: 280px;
   margin: 10px;
   height: 380px;
+<<<<<<< HEAD
   overflow: hidden;
   border-radius: 5px;
   background-color: #202020;
@@ -18,11 +63,30 @@
   transition-duration: 0.3s;
   cursor: pointer;
 
+=======
+  //height: 330px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #202020;
+  box-shadow: 4px 3px 8px 0px rgb(200 152 44 / 22%);
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 4px 3px 11px 6px rgb(200 152 44 / 46%);
+    transform: translateY(-3px);
+  }
+
+>>>>>>> 0655d6ceb022e1c78370a2da7548e3afc2019220
   &-thumb-container {
     background-color: #000;
     position: relative;
     height: 172px;
+<<<<<<< HEAD
     color: white;
+=======
+    color: #fff;
+>>>>>>> 0655d6ceb022e1c78370a2da7548e3afc2019220
     text-align: center;
   }
 
@@ -40,6 +104,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+<<<<<<< HEAD
     height: 120px;
   }
 
@@ -49,6 +114,15 @@
     text-align: center;
     font-size: 22px;
     font-family: "Arial", serif;
+=======
+    height: 157px;
+  }
+
+  &-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+>>>>>>> 0655d6ceb022e1c78370a2da7548e3afc2019220
     margin-bottom: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -57,6 +131,7 @@
 
   &-platforms {
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
   }
   &-platform {
@@ -68,3 +143,12 @@
 
 
 
+=======
+  }
+
+  &-platform {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+>>>>>>> 0655d6ceb022e1c78370a2da7548e3afc2019220
